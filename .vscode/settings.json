@@ -1,0 +1,8 @@
+{
+    "json.format.enable": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.configuration-editing",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
