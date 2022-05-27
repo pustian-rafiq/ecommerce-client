@@ -1,10 +1,29 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Tiro+Bangla:ital@0;1&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
-@import 'common.css';
-@import 'card.css';
-@import 'typo.css';
-@import 'megamenu.css';
-@import 'button.css';
-@import 'megaMenuMobile.css';
-@import 'responsive.css';
+@import "variables.css";
+@import "bigSlider.css";
+@import "button.css";
+@import "common.css";
+@import "card.css";
+@import "footer.css";
+
+@import "megamenu.css";
+@import "megaMenuMobile.css";
+
+@import "navMenuDekstop.css";
+@import "navMenuMobile.css";
+
+@import "typo.css";
+@import "form.css";
+@import "onboard.css";
+@import "map.css";
+
+@import "notification.css";
+@import "ProductDetails.css";
+@import "cart.css";
+
+@import "breadcrumb.css";
+@import "responsive.css";
+@import "toast.css";
+@import "search.css";
