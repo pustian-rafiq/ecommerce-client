@@ -4,7 +4,22 @@ import { Card, Container } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-export class NewArrival extends Component {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
+class NewArrival extends Component {
+  constructor(props) {
+    super(props);
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+  }
+  next() {
+    this.slider.slickNext();
+  }
+  previous() {
+    this.slider.slickPrev();
+  }
+
   render() {
     const settings = {
       dots: false,
@@ -47,17 +62,35 @@ export class NewArrival extends Component {
           <Container className="text-center BetweenTwoSection" fluid={true}>
             <h4 className="section-title">
               NEW ARRIVAL
-              {/* <a className="btn btn-sm ml-2 site-btn" onClick={this.previous}>
-                <i className="fa fa-angle-left" />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a className="btn btn-sm ml-2 site-btn" onClick={this.previous}>
+                <FontAwesomeIcon
+                  icon={faAngleLeft}
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#fff",
+                    padding: "5px",
+                    fontSize: "14px",
+                  }}
+                />
               </a>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className="btn btn-sm ml-2 site-btn" onClick={this.next}>
-                <i className="fa fa-angle-right" />
-              </a> */}
+                <FontAwesomeIcon
+                  icon={faAngleRight}
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#fff",
+                    padding: "5px",
+                    fontSize: "14px",
+                  }}
+                />
+              </a>
             </h4>
             <h6 className="section-sub-title">
               Some Of Our Exclusive Collection, You May Like
             </h6>
-            <Slider {...settings}>
+            <Slider ref={(c) => (this.slider = c)} {...settings}>
               <div className="p-1">
                 <Link to="/">
                   <Card className="card   text-center w-100  image-box ">
