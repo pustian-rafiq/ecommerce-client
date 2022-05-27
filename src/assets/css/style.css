@@ -4,4 +4,7 @@
 @import 'common.css';
 @import 'card.css';
 @import 'typo.css';
+@import 'megamenu.css';
+@import 'button.css';
+@import 'megaMenuMobile.css';
 @import 'responsive.css';
