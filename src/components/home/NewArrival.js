@@ -63,7 +63,7 @@ class NewArrival extends Component {
             <h4 className="section-title">
               NEW ARRIVAL
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a className="btn btn-sm ml-2 site-btn" onClick={this.previous}>
+              <a onClick={this.previous}>
                 <FontAwesomeIcon
                   icon={faAngleLeft}
                   style={{
@@ -71,11 +71,13 @@ class NewArrival extends Component {
                     color: "#fff",
                     padding: "5px",
                     fontSize: "14px",
+                    marginRight: "5px",
+                    marginLeft: "5px",
                   }}
                 />
               </a>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a className="btn btn-sm ml-2 site-btn" onClick={this.next}>
+              <a onClick={this.next}>
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   style={{

@@ -1,5 +1,6 @@
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
+import NavMenuDesktop from "../components/common/NavMenuDesktop";
 import Categories from "../components/home/Categories";
 import Collections from "../components/home/Collections";
 //import { faCoffee } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,7 @@ export class HomePage extends Component {
   render() {
     return (
       <>
+        <NavMenuDesktop />
         <HomeTop />
         <FeaturedProduct />
         <Categories />
